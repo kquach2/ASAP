@@ -25,6 +25,7 @@ html, body {
 #links {
     display: flex;
     list-style-type: none;
+    color: #0079fa;
     gap: 100px;
 }
 
@@ -43,16 +44,21 @@ h1, p {
 }
 
 h2 {
-    color: white;
-    font-family: 'Fredoka One', cursive;
     font-size: 30px;
 }
 
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+#sources + ul {
+    margin-top: 0;
+}
 li {
     font-family: 'Poppins', sans-serif;
     font-weight: bold;
     font-size: 17px;
-    color: #0079fa;
     cursor: pointer;
 }
 
@@ -75,17 +81,17 @@ button {
     margin-left: 5px;
 }
 
-h3 {
+h3, h1 {
     color: #0079fa;
 }
 
-#kevin, #linh, #adrian, #diarra {
+#kevin, #linh, #adrian, #diarra, #rishabh, #jacob, #alexandra, #nikolai {
     height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-#kevin img, #linh img, #adrian img, #diarra img {
+#kevin img, #linh img, #adrian img, #diarra img, #rishabh img, #jacob img, #alexandra img, #nikolai img {
     max-height:50%; 
     max-width:50%;
     margin-bottom: 30px;
@@ -94,13 +100,29 @@ h3 {
 #kevin p, #linh p, #adrian p, #diarra p {
     width: 80%;
 }
-#aboutus-content {
+#aboutus-content, #success-content {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 43px;
 }
 
-#aboutus-content div {
+#aboutus-content div, #success-content div {
     width: 40%;
 }
+
+#international-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 43px;
+    padding-top: 10px;
+}
+
+#international-content div {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 70%;
+}
+
